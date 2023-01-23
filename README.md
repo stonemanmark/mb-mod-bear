@@ -1,7 +1,5 @@
 # Hugo ʕ•ᴥ•ʔ Bear Blog
 
-<img src="https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png" style="display: none;">
-
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
 
 > Free, no-nonsense, super-fast blogging.
@@ -17,6 +15,8 @@ For a current & working demo of this theme, please check out https://janraasch.g
 ⬛️ [Dark][dark-screenshot]
 
 When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
+
+<img src="https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png">
 
 ## Installation
 
