@@ -1,8 +1,6 @@
 # Hugo ʕ•ᴥ•ʔ Bear Blog
 
-<div style="display: none;">
-![Screenshot][light-screenshot]
-</div>
+<img src="https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png" style="display: none;">
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
 
