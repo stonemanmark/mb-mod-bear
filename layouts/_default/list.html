@@ -19,7 +19,7 @@
       {{ if .Title }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ else }}
-        <a href="{{ .Permalink }}">{{ .Content | safeHTML | truncate 5 }}</a>
+        <a href="{{ .Permalink }}">{{ .Plain | truncate 30 }}</a>
       {{ end }}
     </li>
     {{ else }}
