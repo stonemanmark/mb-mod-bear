@@ -6,11 +6,11 @@
         <div class="h-entry">
 			{{ if .Title }}
 			<h1 class="">
-				<a href="{{ .Permalink }}"><div class="">{{ .Title }}</div></a>
+				<a href="{{ .Permalink }}"><div class="p-name">{{ .Title }}</div></a>
 			</h1>
 			{{ end }}
 			<span class="e-content">{{ .Content }}</span>
-		
+
             <p>
 		<a href="{{ .Permalink }}" class="u-url">
 		<i><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "2 Jan, 2006" }}</time></i>
