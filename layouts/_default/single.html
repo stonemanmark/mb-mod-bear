@@ -1,8 +1,6 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-<content>
-  {{ .Content }}
-</content>
+{{ .Content }}
 <p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
