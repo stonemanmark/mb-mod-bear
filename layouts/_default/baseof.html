@@ -15,7 +15,7 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
-    
+
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}">
   <link rel="me" href="https://micro.blog/{{ .Site.Author.username }}" />
 	{{ with .Site.Params.twitter_username }}
@@ -33,7 +33,8 @@
 	<link rel="microsub" href="https://micro.blog/microsub" />
 	<link rel="webmention" href="https://micro.blog/webmention" />
 	<link rel="subscribe" href="https://micro.blog/users/follow" />
-  
+	<link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
+
   {{ range .Site.Params.plugins_css }}
     <link rel="stylesheet" href="{{ . }}" />
   {{ end }}
@@ -41,7 +42,7 @@
     {{ partial $filename $ }}
   {{ end }}
 
-  
+
   {{- partial "style.html" . -}}
 
   <!-- A partial to be overwritten by the user.
@@ -66,7 +67,7 @@
   your local /layouts/partials-directory -->
   {{- partial "custom_body.html" . -}}
 
-  {{ partial "custom_footer.html" . }}    
+  {{ partial "custom_footer.html" . }}
   {{ range .Site.Params.plugins_js }}
     <script src="{{ . }}"></script>
   {{ end }}
